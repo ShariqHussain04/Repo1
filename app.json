@@ -5,7 +5,6 @@
     "platforms": [
       "ios",
       "android",
-      "web"
     ],
     "version": "1.0.0",
     "orientation": "portrait",
@@ -20,9 +19,16 @@
     },
     "assetBundlePatterns": [
       "**/*"
+      
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": false,
+      "bundleIdentifier": "com.yourcompany.yourappname",
+      "buildNumber": "1.0.0"
+    },
+    "android": {
+      "package": "com.yourcompany.yourappname",
+      "versionCode": 1
     }
   }
 }
