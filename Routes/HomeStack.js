@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { StyleSheet, Button, View, Text, Dimensions } from 'react-native';
+import { StyleSheet, Button, View, Text, Dimensions, Image } from 'react-native';
 import { createStackNavigator } from '@react-navigation/stack';
 import ListVC from '../Screens/ListVC';
 import Header from '../Shared/Header'
@@ -22,13 +22,20 @@ export default function homeNavigator() {
             headerTitleStyle: {
                 fontWeight: 'bold',
             },
-        }} >
+            options:{
+                drawerIcon:()=>(
+                    <Image 
+                    source={require('../assets/WayBaseIcon.png')} />
+                )
+            }
+        }}  >
             <Stack.Screen name="List"
                 component={ListVC}
                 options={({ navigation }) => {
                     return { headerTitle: () => <Header navigation={navigation} /> }
                 }
                 }
+
             />
 
             <Stack.Screen name="Graph"

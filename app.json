@@ -4,7 +4,7 @@
     "slug": "WayBaseTestProj",
     "platforms": [
       "ios",
-      "android",
+      "android"
     ],
     "version": "1.0.0",
     "orientation": "portrait",
@@ -23,7 +23,7 @@
     ],
     "ios": {
       "supportsTablet": false,
-      "bundleIdentifier": "com.yourcompany.yourappname",
+      "bundleIdentifier": "com.Viejas.testApp",
       "buildNumber": "1.0.0"
     },
     "android": {
