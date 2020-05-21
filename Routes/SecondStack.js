@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Button, View, Text } from 'react-native';
 import { createStackNavigator } from '@react-navigation/stack';
-import GraphVC from '../Screens/GraphVC';
+import GraphVC from '../Screens/Main Screens/GraphVC';
 import Header from '../Shared/Header'
 
 

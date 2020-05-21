@@ -3,10 +3,10 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 import { NavigationContainer } from '@react-navigation/native';
 import aboutNavigator from './SecondStack';
 import homeNavigator from './HomeStack';
-import DrawerContent from '../Screens/DrawerContent'
+import DrawerContent from '../Screens/Main Screens/DrawerContent'
 
 const Drawer = createDrawerNavigator();
-
+ 
 export default function drawerNavigator() {
     return (
         <NavigationContainer>

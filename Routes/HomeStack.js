@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import { StyleSheet, Button, View, Text, Dimensions, Image } from 'react-native';
 import { createStackNavigator } from '@react-navigation/stack';
-import ListVC from '../Screens/ListVC';
+import ListVC from '../Screens/Main Screens/ListVC';
 import Header from '../Shared/Header'
 import { MaterialIcons } from '@expo/vector-icons'
-import GraphVC from '../Screens/GraphVC';
+import GraphVC from '../Screens/Main Screens/GraphVC';
 
 const buttonClickHandler = () => {
 
