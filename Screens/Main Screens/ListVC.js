@@ -1,12 +1,23 @@
-import React from 'react'
+import React,{useState, useEffect} from 'react'
 import {View, Text, Button, TouchableOpacity, StyleSheet} from 'react-native'
+import fetchMovies from '../../Service/RequestHandler'
 
 export default function ListVC({ navigation }){
    
+const [isLoading,setisLoading] = useState(false)
+
+useEffect(()=>{ 
+    console.log("useEffect called")
+    hitFetchMoviesApi();
+  },[])
+
+ async function hitFetchMoviesApi(){
+      setisLoading(true)
+    let response =  await fetchMovies();
+    console.log('test'+response);
+  }
 
     const buttonActionHandler = ()=>{
-console.log('buttonActionHandler');
-
         navigation.push('Graph')
     }
 
