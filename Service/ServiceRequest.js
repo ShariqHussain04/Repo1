@@ -4,6 +4,8 @@ import React, { Component } from 'react'
   export async function postData(url = '', data = {}) {
   // Default options are marked with *
 
+  console.log('Post Data UR --->>>',url);
+  console.log('Post Data --->>',data);
   try {
     const res = await fetch(url, {
       method: 'POST', // *GET, POST,  PUT, DELETE, etc.
@@ -51,7 +53,8 @@ export async function getData(url = '') {
   let result = await res.json();
   console.log('Get Request'+ result);
   return result; // parses JSON response into native JavaScript objects
-  } catch (error) {
+  } 
+  catch (error) {
     throw error;
     
     

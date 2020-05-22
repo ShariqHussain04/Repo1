@@ -6,7 +6,7 @@ export default class MyActivityIndicator extends Component {
     render()
     {
         return(
-            <View style={{ flex: 1, backgroundColor: '#90EE90', alignItems: 'center', justifyContent: 'center' }}>
+            <View style={{ flex: 1, backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'center' }}>
             <ActivityIndicator animating='true' color="#gray" />
             <Text style={{ marginTop: 10 }} children="Please Wait.." />
              </View>
